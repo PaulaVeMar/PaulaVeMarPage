@@ -1,0 +1,81 @@
+    body {
+      margin: 0;
+      font-family: 'Anton', Arial, sans-serif;
+      background-color:rgba(0, 0, 0, 0.3);
+    }
+    .centro {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(100vh - 100px);
+    }
+    h1{
+        color: white;
+    }
+
+    .contacto {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .contacto h1 {
+      margin-bottom: 20px;
+    }
+
+    .contacto a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 24px;
+      transition: color 0.3s;
+    }
+
+    .copiarCorreo {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    .copiarCorreo:hover{
+      color: #EA4335
+    }
+
+    .facebook:hover{
+        color: #3b5998;
+    }
+
+    .x:hover{
+        color: black;
+    }
+
+    .instagram:hover{
+        color: #e1306c;
+    }
+
+    .linkedin:hover{
+        color: #0077b5;
+    }
+
+    .email {
+      display: block;
+      margin-top: 30px;
+      font-size: 18px;
+    }
+
+    .email:hover{
+        color: #EA4335;
+    }
+
+    #mensaje-copiado {
+      display: none;
+      color: green;
+      margin-top: 10px;
+      font-size: 14px;
+    }

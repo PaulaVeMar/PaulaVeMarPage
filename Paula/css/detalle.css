@@ -1,0 +1,15 @@
+.carrusel-contenedor {
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+}
+
+.carrusel-inner {
+  display: flex;
+}
+
+.imagen-ampliable.ampliada {
+  transform: scale(1.2);
+}

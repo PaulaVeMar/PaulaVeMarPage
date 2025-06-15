@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: 'Anton', Arial, sans-serif;
+  background-color:rgba(0, 0, 0, 0.3);
+  height: 100vh;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(780px, 1fr)); 
+  gap: 50px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.item {
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.item:hover {
+  transform: scale(1.2);
+}
+
+.item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+#carouselCaption,
+#carouselCaption p{
+  white-space: pre;
+}
