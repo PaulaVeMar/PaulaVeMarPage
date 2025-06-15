@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARKET Edit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/styleHome.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+  
+</head>
+<body>
+  <header>
+    <a href="index.html" class="titleName"><h3>Paulavemar</h3></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="ads.html">Ads</a>
+      <div class="dropdown">
+      <span class="dropdown-trigger">Editorial</span>
+      <div class="dropdown-menu">
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+      </div>
+    </div>
+      <a href="influencer.html">Influencer</a>
+      <a href="videoclip.html">Videoclips</a>
+      <a href="contact.html">About</a>
+    </nav>
+  </header>
+   <div class="gallery">
+    <div class="item" onclick="goToDetail('bagdad', 'Photo & Stylist: @paula_vemar', null, null, null)">
+      <img style="height:125%;" src="Siluetas de portada/1.png" alt="Pink Fright">
+      <div class="title">Pink Fright - Styled by Pauli</div>
+    </div>
+    <div class="item" onclick="goToDetail('miguel-cobs', 'Model:@miguelcobos      Styling:@paula_vemar', 'Photo:@alvcoro', null, null)">
+      <img style="height:120%;" src="Siluetas de portada/6.png" alt="Imagen 3">
+      <div class="title">Miguel Cobs - Styled by Pauli</div>
+    </div>
+    <div class="item" onclick="goToDetail('muted-bloom', 'Model:@_yxngjavi      Styling:@paula_vemar', 'Photo:@pauladiazmarcos      Muah:@raquel.aragues', null, null)">
+      <img style="height:125%;" src="Siluetas de portada/3.png" alt="Imagen 4">
+      <div class="title">Muted bloom - Styled by Pauli</div>
+    </div>
+    <div class="item" onclick="goToDetail('no-name', 'Model:@melanieroldann     Stylist:@paula_vemar', 'Photo:@pauladiazmarcos      MUAH:@raquel.aragues', null, null)">
+      <img style="height:145%;" src="Siluetas de portada/4.png" alt="Imagen 5">
+      <div class="title">Crimson Instinct - Styled by Pauli</div>
+    </div>
+    <div class="item" onclick="goToDetail('nocturne-fiancee', 'Model:@_taaniabeermudez_     Stylist:@paula_vemar', 'Photo:@pauladiazmarcos      MUAH:@saraysojo_', null, null)">
+      <img style="height:175%;" src="Siluetas de portada/5.png" alt="Imagen 10">
+      <div class="title">Cautere Til Death - Styled by Pauli</div>
+    </div>
+    <div class="item" onclick="goToDetail('red', 'Model:@luisahsanpio     Stylist:@paula_vemar', 'Photo:@flaviorsolato      MUAH:@albamedina.mua', null, null)">
+      <img style="height:140%;" src="Siluetas de portada/2.png" alt="Imagen 11">
+      <div class="title">RED - Styled by Pauli</div>
+    </div>
+  </div>
+
+  <div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+
+  <div class="carousel">
+    <button class="prev" onclick="prevImage()">&#10094;</button>
+
+    <div class="carousel-content">
+      <img id="carouselImage" src="" alt="">
+      <p id="carouselCaption"></p>
+    </div>
+
+    <button class="next" onclick="nextImage()">&#10095;</button>
+  </div>
+</div>
+  <script src="js/about.js"></script>
+</body>
+</html>

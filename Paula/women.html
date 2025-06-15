@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Editorial(Women)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+</head>
+<body>
+  <header>
+    <a href="index.html" class="titleName"><h3>Paulavemar</h3></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="ads.html">Ads</a>
+      <div class="dropdown">
+      <span class="dropdown-trigger">Editorial</span>
+      <div class="dropdown-menu">
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+      </div>
+    </div>
+      <a href="influencer.html">Influencer</a>
+      <a href="videoclip.html">Videoclips</a>
+      <a href="contact.html">About</a>
+    </nav>
+  </header>
+  <div class="gallery">
+    <div class="item" onclick="goToDetail('mar-lucas', 'Talent:@marlucas for @folie.magazine', 'Stylist:@enolamola            Stylist_Assistant:@paula_vemar', 'Photo:@adrian_nucelaar      Photo_Assitan:@viictorgm_', 'MUAH:@marckessa      Editor in Chief:@pabloaragon')"><img src="portfolio-paula-vega/editorial/mar-lucas/mar-lucas1.jpg" alt="mar-lucas"></div>
+    <div class="item" onclick="goToDetail('moises-y-laura', 'Talent:@iamlauraponte & @moisesnieto for @voguespain', 'Stylist:@patricia.lopezp     Stylist Assistant:@paula_vemar', 'Photo:@guillesanchezme      MUAH:@iriasalgado ', 'Production:@juli.sartor     Production Assistant:@patriciacuadross & @micadeestasio')"><img src="portfolio-paula-vega/editorial/moises-y-laura/moises-y-laura.jpg" alt="moises-y-laura"></div>
+    <div class="item" onclick="goToDetail('back-to-basics', 'Talent:@judeli.ne for @voguespain', 'Stylist:@patricia.lopezp      Stylist Assistant:@paula_vemar', 'Photo:@silvia.retana      MUAH:@fidelmakeup', 'Production:@juli.sartor      Production Assistant:@patriciacuadross & @micadestasio')"><img src="portfolio-paula-vega/editorial/back-to-basics/back-to-basics1.jpg" alt="back-to-basics"></div>
+    <div class="item" onclick="goToDetail('bely-basarte', 'Talent:@belybasarte for @folie.magazine', 'Stylist:@enolamola     Stylist Assistant:@paula_vemar', 'Photo:@leticiadiazdelamorena     MUAH:@mimigomezmuah ', 'Editor in Chief:@pabloaragon')"><img src="portfolio-paula-vega/editorial/bely-basarte/bely-basarte8.jpg" alt="bely-basarte"></div>
+    <div class="item" onclick="goToDetail('sila-lua', 'Talent:@sila.lua for @somosnuebo', 'Stylist:@enolamola     Stylist Assistant:@paula_vemar', 'Photo:@adrian_nucelaar      Photo Assitan:@viictorgm_', 'MUAH:@marckessa    Editor in Chief:@pabloaragon')"><img src="portfolio-paula-vega/editorial/sila-lua/sila-lua1.jpg" alt="sila-lua"></div>
+    <div class="item" onclick="goToDetail('penelope-guerrero', 'Talent:@penelopeguerrero for @folie.magazine', 'Stylist:@enolamola     Stylist Assistant:@paula_vemar', 'Photo:@adrian_nucelaar      Photo Assitan:@viictorgm_', 'MUAH:@martaalonso_98      HAIR:@mimigomezmuah     Editor in Chief:@pabloaragon')"><img src="portfolio-paula-vega/editorial/penelope-guerrero/penelope-guerrero5.jpg" alt="penelope-guerrero"></div>
+    <div class="item" onclick="goToDetail('tired-as-f', 'Model:@malia.struve     Stylist:@paula_vemar', 'Photo:@pauladiazmarcos     MUAH:@raquel.aragues', null, null)"><img src="portfolio-paula-vega/editorial/tired-as-f/tired-as-f3.jpg" alt="tired-as-f"></div>
+    <div class="item" onclick="goToDetail('red', 'Model:@luisahsanpio     Stylist:@paula_vemar', 'Photo:@flaviorsolato      MUAH:@albamedina.mua', null, null)"><img src="portfolio-paula-vega/editorial/red/red3.jpg" alt="red"></div>
+    <div class="item" onclick="goToDetail('nocturne-fiancee', 'Model:@_taaniabeermudez_     Stylist:@paula_vemar', 'Photo:@pauladiazmarcos      MUAH:@saraysojo_', null, null)"><img src="portfolio-paula-vega/editorial/nocturne-fiancee/nocturne-fiancee3.jpg" alt="nocturne-fiancee"></div>
+    <div class="item" onclick="goToDetail('no-name', 'Model:@melanieroldann     Stylist:@paula_vemar', 'Photo:@pauladiazmarcos      MUAH:@raquel.aragues', null, null)"><img src="portfolio-paula-vega/editorial/no-name/no-name3.jpg" alt="no-name"></div>
+    <div class="item" onclick="goToDetail('20s', 'Model:@carmenrubioma      Stylist:@paula_vemar', 'Photo:@pauladiazmarcos      Photo Assistant:@silviadelarosa', 'MUAH:@davizpelaez', null)"><img src="portfolio-paula-vega/editorial/20s/20s1.jpg" alt="20s"></div>
+    <div class="item" onclick="goToDetail('bagdad', 'Photo & Stylist: @paula_vemar', null, null, null)"><img src="portfolio-paula-vega/editorial/bagdad/bagdad6.jpg" alt="bagdad"></div>
+    <div class="item" onclick="goToDetail('back-to-basics', 'Model:@mariaabyn     Stylist: @paula_vemar', 'Photo:@flaviorsolato     MUAH: @saraysojo_', null, null)"><img src="portfolio-paula-vega/editorial/back-to-basics/back-to-basics2.jpg" alt="back-to-basics"></div>
+  </div>
+  
+  <div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+
+  <div class="carousel">
+    <button class="prev" onclick="prevImage()">&#10094;</button>
+
+    <div class="carousel-content">
+      <img id="carouselImage" src="" alt="">
+      <p id="carouselCaption"></p>
+    </div>
+
+    <button class="next" onclick="nextImage()">&#10095;</button>
+  </div>
+</div>
+
+  <script src="js/about.js"></script>
+</body>
+</html>

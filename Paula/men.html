@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Editorial(Men)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+</head>
+<body>
+  <header>
+    <a href="index.html" class="titleName"><h3>Paulavemar</h3></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="ads.html">Ads</a>
+      <div class="dropdown">
+      <span class="dropdown-trigger">Editorial</span>
+      <div class="dropdown-menu">
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+      </div>
+    </div>
+      <a href="influencer.html">Influencer</a>
+      <a href="videoclip.html">Videoclips</a>
+      <a href="contact.html">About</a>
+    </nav>
+  </header>
+  <div class="gallery">
+    <div class="item" onclick="goToDetail('miguel-cobs', 'Model:@miguelcobos    Styling:@paula_vemar', 'Photo:@alvcoro', null, null)"><img src="portfolio-paula-vega/editorial/miguel-cobs/miguel-cobs8.jpg" alt="Imagen 3"></div>
+    <div class="item" onclick="goToDetail('muted-bloom', 'Model:@_yxngjavi    Styling:@paula_vemar', 'Photo:@pauladiazmarcos    Muah:@raquel.aragues', null, null)"><img src="portfolio-paula-vega/editorial/muted-bloom/muted-bloom1.jpg" alt="Imagen 4"></div>
+    <div class="item" onclick="goToDetail('alex-y-pepe', 'Model:@alexxserranooo    Model:@pepehomdedeu', 'stylist:@paula_vermar    Photo:@viictorgm_', 'Photo Ass: @yuneidycely', null)"><img src="portfolio-paula-vega/editorial/alex-y-pepe/alex-y-pepe1.jpg" alt="Imagen 5"></div>
+  </div>
+  
+  <div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+
+  <div class="carousel">
+    <button class="prev" onclick="prevImage()">&#10094;</button>
+
+    <div class="carousel-content">
+      <img id="carouselImage" src="" alt="">
+      <p id="carouselCaption"></p>
+    </div>
+
+    <button class="next" onclick="nextImage()">&#10095;</button>
+  </div>
+</div>
+
+  <script src="js/about.js"></script>
+</body>
+</html>
